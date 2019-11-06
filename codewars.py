@@ -24,3 +24,7 @@ openOrSenior([[18, 20],[45, 2],[61, 12],[37, 6],[21, 21],[78, 9]])
 
 # desired output
 # ["Open", "Open", "Senior", "Open", "Open", "Senior"]
+
+# One-liner
+def openOrSenior(data):
+  return ["Senior" if age >= 55 and handicap >= 8 else "Open" for (age, handicap) in data]
